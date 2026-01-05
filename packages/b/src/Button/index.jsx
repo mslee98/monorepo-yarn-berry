@@ -13,18 +13,18 @@ const Button = forwardRef(
       style: userStyle,
       ...props
     },
-    ref
+    ref,
   ) => {
     // 간단한 색상 테마
     const colors = useMemo(
       () => ({
         primary: '#3ebd93', // mint
-        danger: '#ff4d4f',  // red
-        default: '#999',     // gray
+        danger: '#ff4d4f', // red
+        default: '#999', // gray
         white: '#fff',
         gray5: '#ccc',
       }),
-      []
+      [],
     );
 
     // 공통 스타일
@@ -68,7 +68,7 @@ const Button = forwardRef(
         {children ?? text}
       </button>
     );
-  }
+  },
 );
 
 export default Button;

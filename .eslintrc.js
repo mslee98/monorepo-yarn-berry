@@ -18,7 +18,7 @@ module.exports = {
 
   extends: [
     'eslint:recommended',
-    'prettier', // 반드시 마지막
+    'prettier', // 반드시 마지막 - prettier와 충돌을 방지
   ],
 
   rules: {
